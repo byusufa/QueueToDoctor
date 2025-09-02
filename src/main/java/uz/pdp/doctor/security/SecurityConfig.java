@@ -29,7 +29,6 @@ public class SecurityConfig {
                 req
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers("/api/login/**").permitAll()
-                        .requestMatchers("/api/home/**").hasRole("USER")
                         .anyRequest().authenticated());
 
         http.userDetailsService(customUserDetailsService);
