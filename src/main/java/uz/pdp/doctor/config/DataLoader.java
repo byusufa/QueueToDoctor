@@ -35,16 +35,16 @@ public class DataLoader implements CommandLineRunner {
         if (ddlauto.equals("create")) {
 
             Role role1 = Role.builder()
-                    .roleName(RoleName.ADMIN)
+                    .roleName(RoleName.ROLE_ADMIN)
                     .build();
             Role role2 = Role.builder()
-                    .roleName(RoleName.USER)
+                    .roleName(RoleName.ROLE_USER)
                     .build();
             Role role3 = Role.builder()
-                    .roleName(RoleName.DOCTOR)
+                    .roleName(RoleName.ROLE_DOCTOR)
                     .build();
             Role role4 = Role.builder()
-                    .roleName(RoleName.SUPER_ADMIN)
+                    .roleName(RoleName.ROLE_SUPER_ADMIN)
                     .build();
 
             List<Role> roles = roleRepository.saveAll(new ArrayList<>(List.of(role1, role2, role3, role4)));
