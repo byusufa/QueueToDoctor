@@ -1,8 +1,8 @@
 package uz.pdp.doctor.enums;
 
 public enum RoleName {
-    DOCTOR,
-    USER,
-    ADMIN,
-    SUPER_ADMIN,
+    ROLE_DOCTOR,
+    ROLE_USER,
+    ROLE_ADMIN,
+    ROLE_SUPER_ADMIN,
 }
